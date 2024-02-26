@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="icon" href="./assets/img/webIcon.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/icon.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <link rel="stylesheet" href="./assets/css/reponsive.css" />
+    <link rel="stylesheet" href="./assets/css/snow.css" />
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div id="snow"></div>
+
+    <div id="main">
+        <div id="toast"></div>
+
+        <!--  -->
+        <div id="weather">
+            <!-- nav -->
+            <aside id="nav">
+                <a href="#main">
+                    <div class="nav-logo">
+                        <img src="./assets/img/weather-logo.gif" alt="Logo" class="logo-img" /><br />
+                        <span class="logo-title">Dev Weather</span>
+                    </div>
+                </a>
+
+                <nav class="navbar">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <div class="nav_icon active">
+                                <i class="fa-solid fa-chart-column nav_icon-img"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav_icon">
+                                <i class="fa-solid fa-binoculars nav_icon-img"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav_icon">
+                                <i class="fa-solid fa-location-dot nav_icon-img"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav_icon">
+                                <i class="fa-regular fa-calendar-days nav_icon-img"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav_icon">
+                                <i class="fa-solid fa-gear nav_icon-img"></i>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav_icon">
+                                <i class="fa-regular fa-moon nav_icon-img"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- content -->
+            <div class="contains">
+                <div id="content">
+                    <!-- header -->
+                    <header class="header">
+                        <!-- info -->
+                        <div class="info">
+                            <div class="user-logo">
+                                <img class="user-logo_img" src="./assets//img//user-logo.png" alt="userLogo" />
+                            </div>
+                            <div class="user-desc">
+                                <h4 class="hello">Hello</h4>
+                                <span class="user-name">My Group</span>
+                            </div>
+                        </div>
+
+                        <!-- search -->
+                        <div class="search">
+                            <div class="search-input">
+                                <div><input class="search-text" type="text" placeholder="Search City..." /></div>
+                                <button class="search_btn">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </button>
+                            </div>
+                            <i class="fa-regular fa-bell bell-icon"></i>
+                        </div>
+                    </header>
+
+                    <!-- day -->
+                    <div class="weather_day-forecast">
+                        <div class="weather-status">
+                            <div class="p24">
+                                <div class="country">
+                                    <div class="weather-icon">
+                                        <div class="weather_sun-icon sun-icon">
+                                            <i class="fa-solid fa-cloud-sun"></i>
+                                        </div>
+                                    </div>
+                                    <div class="country-desc">
+                                        <h3 class="country-name">HaNoi</h3>
+                                        <span class="weather-feeling">What's the weather</span>
+                                    </div>
+                                </div>
+
+                                <!-- temperature -->
+                                <div class="weather-temp">
+                                    <div class="weather-temp-contains">
+                                        <div class="weather-temp_max">
+                                            <span class="temp temp_max">35<sup>o</sup>C</span>
+                                        </div>
+                                        <div class="weather-temp_min">
+                                            <span class="temp_min">35<sup>o</sup>C</span>
+                                        </div>
+                                    </div>
+                                    <div class="weather-temp-title">Few CLouds</div>
+                                </div>
+
+                                <!-- weather-more-status -->
+                                <div class="weather_info">
+                                    <div class="status pressure">
+                                        <div class="pressure-title">Pressure</div>
+                                        <div class="status-desc">1005 hPa</div>
+                                    </div>
+                                    <div class="status visibility">
+                                        <div class="visibility-title">Visibility</div>
+                                        <div class="status-desc">10 Km</div>
+                                    </div>
+                                    <div class="status humadidy">
+                                        <div class="humadidy-title">Humadidy</div>
+                                        <div class="status-desc">50%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- wind -->
+                        <div class="day-wind">
+                            <div class="p24">
+                                <div class="country">
+                                    <div class="weather-icon">
+                                        <i class="fa-solid fa-wind"></i>
+                                    </div>
+                                    <div class="country-desc">
+                                        <h3 class="country-name">Wind</h3>
+                                        <span class="weather-feeling">Clouds</span>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                <div class="weather-temp">
+                                    <div class="weather-temp-contains">
+                                        <div class="weather-temp_max">
+                                            <span class="temp wind-direction">5km</span>
+                                        </div>
+                                    </div>
+                                    <div class="weather-temp-title">Few CLouds</div>
+                                </div>
+                                <!-- block range -->
+                                <div class="status wind_block">
+                                    <div class="wind_block-title">Clouds</div>
+                                    <div class="wind_block-range">
+                                        <input class="wind-range" type="range" min="0" max="100" value="100" step="1" />
+                                        <div class="wind_block-range-percent"></div>
+                                        <span class="wind-percent"><span class="wind_value">20%</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- content forecast -->
+                    <div class="weather_day-forecast">
+                        <div class="chart">
+                            <div class="chart_header">
+                                <h1 class="chart_title">How's the temperature today !</h1>
+                                <ul class="chart_icons">
+                                    <li class="chart_icon">
+                                        <i class="fa-solid fa-temperature-low status_icon"></i>
+                                    </li>
+                                    <li class="chart_icon"><i class="fa-solid fa-umbrella status_icon"></i></li>
+                                    <li class="chart_icon"><i class="fa-solid fa-wind status_icon"></i></li>
+                                </ul>
+                            </div>
+
+                            <!-- chart -->
+                            <div class="weather_chart">
+                                <ul class="chart_lists">
+                                    <li class="chart_item">
+                                        <div class="chart_hour">12</div>
+                                        <div class="chart_item-icon cloud_icon"></div>
+                                        <div class="chart_temp">33<sup>o</sup>C</div>
+                                    </li>
+                                    <li class="chart_item">
+                                        <div class="chart_hour">12</div>
+                                        <div class="chart_item-icon cloud_icon"></div>
+                                        <div class="chart_temp">33<sup>o</sup>C</div>
+                                    </li>
+                                    <li class="chart_item">
+                                        <div class="chart_hour">12</div>
+                                        <div class="chart_item-icon cloud_icon"></div>
+                                        <div class="chart_temp">33<sup>o</sup>C</div>
+                                    </li>
+                                    <li class="chart_item">
+                                        <div class="chart_hour">12</div>
+                                        <div class="chart_item-icon cloud_icon"></div>
+                                        <div class="chart_temp">33<sup>o</sup>C</div>
+                                    </li>
+                                    <li class="chart_item">
+                                        <div class="chart_hour">12</div>
+                                        <div class="chart_item-icon cloud_icon"></div>
+                                        <div class="chart_temp">33<sup>o</sup>C</div>
+                                    </li>
+                                    <li class="chart_item">
+                                        <div class="chart_hour">12</div>
+                                        <div class="chart_item-icon cloud_icon"></div>
+                                        <div class="chart_temp">33<sup>o</sup>C</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="tomorrow">
+                            <div class="tomorrow_block p16">
+                                <div class="tomorrow_title">
+                                    <span class="tomorrow_header">Tomorrow</span>
+                                    <div class="tomorrow_position">New York</div>
+                                </div>
+
+                                <div class="tomorrow_status">
+                                    <div class="tomorrow_temp">24<sup>o</sup>C</div>
+                                    <div class="tomorrow_desc">Light Rain</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- forecast -->
+                <div id="forecast">
+                    <div class="forecast_contains">
+                        <div class="forecast_header">
+                            <div class="forecast_city">
+                                <div class="city_status">Clouds</div>
+                                <div class="city_name">TP. HCM</div>
+                            </div>
+                            <div class="forecast_temp">
+                                <div class="city_temp">34<sup>o</sup>C</div>
+                            </div>
+                        </div>
+
+                        <div class="forecast_time">
+                            <div class="sunday_icon"><i class="fa-regular fa-sun sunday_icon-img"></i></div>
+                            <div class="time_contains">
+                                <div class="timeblock">
+                                    <div class="timeblock_bg"></div>
+                                </div>
+                            </div>
+                            <input type="range" min="0" max="100" value="100" step="0.1" class="time_range" />
+                            <div class="time_sunset">
+                                <div class="sunrise">
+                                    <div class="sunset_title">Sunrise</div>
+                                    <div class="sunrise_time-value sunset_time">05:43 am</div>
+                                </div>
+                                <div class="sunset">
+                                    <div class="sunset_title">Sunset</div>
+                                    <div class="sunset_time-value sunset_time">5:59 pm</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forecast_uvi">
+                            <div class="uvi">
+                                <i class="fa-regular fa-sun uvi-icon"></i>
+                                <div class="uvi_body">
+                                    <div class="uvi_title">
+                                        <div class="uvi_value">20 UVI</div>
+                                        <div class="uvi_cc">Moderate</div>
+                                    </div>
+                                    <div class="uvi_desc">Moderate risk of from UV rays</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- weather prediction -->
+                        <div class="prediction">
+                            <div class="prediction_title">Weather Prediction</div>
+                            <div class="prediction_block">
+                                <div class="prediction_bl prediction_tomorrow">
+                                    <i class="fa-solid fa-cloud cloud_icon mr16"></i>
+                                    <div class="prediction_desc">
+                                        <div class="prediction_info">
+                                            <div class="info_status">Clouds</div>
+                                            <div class="prediction_time">Sep 20</div>
+                                        </div>
+                                        <div class="info_temp">33<sup>o</sup>C /33<sup>o</sup>C</div>
+                                    </div>
+                                </div>
+                                <div class="prediction_bl prediction_nextTomorrow">
+                                    <i class="fa-solid fa-cloud cloud_icon mr16"></i>
+                                    <div class="prediction_desc">
+                                        <div class="prediction_info">
+                                            <div class="info_status">Clouds</div>
+                                            <div class="prediction_time">Sep 20</div>
+                                        </div>
+                                        <div class="info_temp">33<sup>o</sup>C /33<sup>o</sup>C</div>
+                                    </div>
+                                </div>
+                                <div class="next_btn">
+                                    <div class="btn_block">
+                                        <i class="fa-regular fa-calendar-days"></i>
+                                        <button class="next_title">Next 5 days</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+    <noscript>Please turn on JavaScript on your website</noscript>
+</body>
+
+</html>

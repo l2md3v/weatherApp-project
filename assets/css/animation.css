@@ -1,0 +1,32 @@
+@keyframes topDown {
+    from {
+        top: 0;
+    }
+    to {
+        top: 16px;
+    }
+}
+
+@keyframes nav-animaton {
+    from {
+        transform: skewX(-25deg) translateX(-110%);
+    }
+    to {
+        transform: skewX(-25deg) translateX(100%);
+    }
+}
+
+@keyframes toastSlideIn {
+    from {
+        transform: translateX(calc(100% + 12px));
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes toastFadeOut {
+    to {
+        opacity: 0;
+    }
+}

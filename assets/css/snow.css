@@ -1,0 +1,28 @@
+@keyframes snowFall {
+    0% {
+        transform: translate3d(var(--left-animate-position), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--left-end-animate-position), 300vh, 0);
+    }
+}
+
+#snow {
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.snow_flake {
+    position: absolute;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    top: -5vw;
+    background-color: white;
+    --size: 1vw;
+    --left-animate-position: 2px;
+    --left-end-animate-position: 3px;
+}

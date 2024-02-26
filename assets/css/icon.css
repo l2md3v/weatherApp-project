@@ -1,0 +1,25 @@
+.cloud_icon {
+    font-size: 28px;
+    color: #bed5e7;
+}
+.rain_icon,
+.snow_icon {
+    font-size: 28px;
+    color: #44accf;
+}
+
+.sun_cloud_icon {
+    color: var(--main-color);
+}
+
+.search-icon {
+    color: var(--main-color);
+}
+
+.bell-icon {
+    margin-left: 24px;
+    padding: 14px;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    color: var(--main-color);
+}
